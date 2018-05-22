@@ -1,6 +1,7 @@
 package lmao;
 
 import com.leapmotion.leap.Controller;
+import com.leapmotion.leap.Listener;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -16,10 +17,9 @@ public class Main extends Application {
         Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
 
         // fx shit
-        primaryStage.setTitle("Hello World");
-        primaryStage.setScene(new Scene(root, 300, 275));
+        primaryStage.setTitle("LMAO");
+        primaryStage.setScene(new Scene(root, 500, 500));
         primaryStage.show();
-
 
     }
 
