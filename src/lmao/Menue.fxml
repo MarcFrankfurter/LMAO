@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: grey;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lmao.javafxController">
+   <children>
+      <Button layoutX="225.0" layoutY="88.0" mnemonicParsing="false" onAction="#start" prefHeight="70.0" prefWidth="150.0" style="-fx-background-color: darkgrey;" text="Start" textFill="WHITE" AnchorPane.leftAnchor="225.0" AnchorPane.rightAnchor="225.0">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Button>
+      <Button layoutX="225.0" layoutY="177.0" mnemonicParsing="false" onAction="#exit" prefHeight="223.0" prefWidth="150.0" style="-fx-background-color: darkgrey;" text="Exit" textFill="WHITE" AnchorPane.leftAnchor="225.0" AnchorPane.rightAnchor="225.0">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Button>
+      <Button layoutY="336.0" mnemonicParsing="false" prefHeight="4.0" style="-fx-background-color: red;" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <font>
+            <Font size="1.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
