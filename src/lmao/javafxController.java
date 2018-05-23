@@ -7,6 +7,8 @@ import javafx.geometry.Rectangle2D;
 import javafx.scene.control.Label;
 import javafx.scene.media.AudioClip;
 import javafx.stage.Screen;
+import jm.music.data.Note;
+import jm.util.Play;
 
 import javax.print.DocFlavor;
 import java.awt.*;
@@ -18,17 +20,17 @@ import java.nio.file.Paths;
 public class javafxController {
 
     //fxml
-   // public Label label;
+    // public Label label;
 
     double x;
     double y;
     int appWidth;
     int appHeight;
+    boolean B = false;
 
     Robot robot = new Robot();
 
     AudioClip plonkSound = new AudioClip(Paths.get("src/lmao/bomb.mp3").toUri().toString());
-
     //setting up controller
     Controller controller = new Controller();
     Listener listener = new Listener();
@@ -51,24 +53,32 @@ public class javafxController {
 
             robot.mouseMove((int) appX, (int) appY);
 
-            for(Gesture g:controller.frame().gestures()){
-                if(g.type() == Gesture.Type.TYPE_SCREEN_TAP){
+            for (Gesture g : controller.frame().gestures()) {
+                if (g.type() == Gesture.Type.TYPE_SCREEN_TAP) {
                     robot.mousePress(InputEvent.BUTTON1_DOWN_MASK);
                     robot.mouseRelease(InputEvent.BUTTON1_DOWN_MASK);
                 }
             }
 
-            if(appHeight - appY < 100){
-                plonkSound.play();
+            if (appHeight - appY < 100) {
+
+                //plonkSound.play();
+                if (!B) {
+                    Play.midi(new Note());
+                    B = true;
+                }
+            } else {
+                B = false;
             }
         }
     };
+
 
     public javafxController() throws AWTException {
     }
 
 
-    public void initialize(){
+    public void initialize() {
 
         Rectangle2D bounds = Screen.getPrimary().getVisualBounds();
         appWidth = (int) bounds.getWidth();
