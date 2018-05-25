@@ -1,22 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: grey;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lmao.javafxController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: grey;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lmao.javafxController">
    <children>
-      <Button layoutX="225.0" layoutY="88.0" mnemonicParsing="false" onAction="#start" prefHeight="70.0" prefWidth="150.0" style="-fx-background-color: darkgrey;" text="Start" textFill="WHITE" AnchorPane.leftAnchor="225.0" AnchorPane.rightAnchor="225.0">
-         <font>
-            <Font size="30.0" />
-         </font>
-      </Button>
       <Button layoutX="225.0" layoutY="177.0" mnemonicParsing="false" onAction="#exit" prefHeight="223.0" prefWidth="150.0" style="-fx-background-color: darkgrey;" text="Exit" textFill="WHITE" AnchorPane.leftAnchor="225.0" AnchorPane.rightAnchor="225.0">
          <font>
             <Font size="30.0" />
          </font>
       </Button>
       <Button layoutY="336.0" mnemonicParsing="false" prefHeight="4.0" style="-fx-background-color: red;" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <font>
+            <Font size="1.0" />
+         </font>
+      </Button>
+      <Button fx:id="line1" layoutX="57.0" layoutY="303.0" mnemonicParsing="false" prefHeight="97.0" prefWidth="0.0" AnchorPane.bottomAnchor="0.0">
+         <font>
+            <Font size="1.0" />
+         </font>
+      </Button>
+      <Button fx:id="line2" layoutX="113.0" layoutY="295.0" mnemonicParsing="false" prefHeight="97.0" prefWidth="0.0" AnchorPane.bottomAnchor="0.0">
+         <font>
+            <Font size="1.0" />
+         </font>
+      </Button>
+      <Button fx:id="line3" layoutX="123.0" layoutY="305.0" mnemonicParsing="false" prefHeight="97.0" prefWidth="0.0" AnchorPane.bottomAnchor="0.0">
+         <font>
+            <Font size="1.0" />
+         </font>
+      </Button>
+      <Button fx:id="line4" layoutX="147.0" layoutY="305.0" mnemonicParsing="false" prefHeight="97.0" prefWidth="0.0" AnchorPane.bottomAnchor="0.0">
+         <font>
+            <Font size="1.0" />
+         </font>
+      </Button>
+      <Button fx:id="line5" layoutX="157.0" layoutY="315.0" mnemonicParsing="false" prefHeight="97.0" prefWidth="0.0" AnchorPane.bottomAnchor="0.0">
+         <font>
+            <Font size="1.0" />
+         </font>
+      </Button>
+      <Button fx:id="line6" layoutX="167.0" layoutY="325.0" mnemonicParsing="false" prefHeight="97.0" prefWidth="0.0" AnchorPane.bottomAnchor="0.0">
+         <font>
+            <Font size="1.0" />
+         </font>
+      </Button>
+      <Button fx:id="line7" layoutX="187.0" layoutY="345.0" mnemonicParsing="false" prefHeight="97.0" prefWidth="0.0" AnchorPane.bottomAnchor="0.0">
          <font>
             <Font size="1.0" />
          </font>
